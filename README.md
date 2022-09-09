@@ -35,18 +35,25 @@ java.nio.file.Path;
 1. Look up the latitude and longitude coordinates in an online map.
 1. Screenshot the map and add it into the **images** folder of this project,
 1. Last add image markdown below this line to load your map image.
+   ![Ollie the Otter GPS coordinates from Google Maps](images/GPS coordinates for OllieTheOtter Map ScreenShot.png)
 
 ## PART 3 - Code Scanning and Interpretation
 * Look at the getHiddenSecrets method and identify the following parts:
     * What is the access modifer (public, private, protected)?
+      * Public
     * Is it a Class method or an object Instance method, how do you know?
+      * It's a Class method. I know this because it says Static which allows the main() method to be called before any objects of the class have been created.
     * What is its return data-type?
+      * Void
     * Does it require any parameters, and if so, how many and of what type?
+      * File, file, 2
 * Scan line by line through the code and try to determine how it works?
     * What is familiar to you?
+      * The class and method headers and the format specifiers and the metadata variable and the souts.
     * What is not familiar to you?
+      * if, for, try, catch, all the error statements.
     * Do the **for** loops make sense, and if so, tell me what you think they do?
-
+        *It seems like the for loops are asking to display metadata directory information once, and then asking for tags, names, and descriptions to be pulled. A for loop is also asking for an error message if there is an error in the directory.
 ## PART 4 - Turn in
 ### Same as the last 2 Weeks!
 * When completed, use your IDE to commit your Fall-2022 branch back to your GitHub Account's, Java-Assignment-003/Fall-2022 repo/branch.

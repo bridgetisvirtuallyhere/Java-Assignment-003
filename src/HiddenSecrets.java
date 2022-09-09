@@ -11,6 +11,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // PUT YOUR IMPORTS HERE
+import java.nio.file.Paths;
+import java.util.Scanner;
+import java.nio.file.Path;
 
 public class HiddenSecrets {
     public static void getHiddenSecrets(File file) {
@@ -39,10 +42,31 @@ public class HiddenSecrets {
     }
 
     public static void main(String[] args) {
+
         // Put your code to request a file path,
         // read in a string from System.in,
+        Scanner picture = new Scanner(System.in);
+        System.out.println("Please enter picture path: ");
+        String input = picture.nextLine();
+
         // convert that string into A Path type using Paths class,
+        Path filePath = Paths.get(input);
+
         // and call the getHiddenSecrets method to get the file's meta-data
         // HERE
+        getHiddenSecrets(filePath.toFile());
+
+        //record of the GPS coordinates
+        System.out.println("""
+
+                RECORD OF GPS coordinates for OllieTheOtter image: [GPS] - GPS Latitude Ref = N
+                [GPS] - GPS Latitude = 40° 46' 37.46"
+                [GPS] - GPS Longitude Ref = W
+                [GPS] - GPS Longitude = -124° 8' 41.55"
+                [GPS] - GPS Altitude Ref = Sea level
+                [GPS] - GPS Altitude = 21.5 metres
+                [GPS] - GPS Time-Stamp = 18:42:20.000 UTC
+                [GPS] - GPS Processing Method = CELLID
+                [GPS] - GPS Date Stamp = 2022:08:22""");
     }
 }
