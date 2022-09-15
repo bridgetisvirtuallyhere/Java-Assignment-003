@@ -1,4 +1,16 @@
-# Java-Assignment-003
+# ASSIGNMENT 4
+* Look up how to pull an image from a public website.
+* Get image from a public website and run metadata extractor on it.
+* Use an image extractor site to get the images below. 
+  ![extracted image from CR landing page](images/crquad.jpg)
+* Looks like the image above might be a digital rendering uploaded on sept. 19th 2019 at 3:30pm. No GPD information, however, because it isn't a photo. Looks like they used a Mac.
+  ![extracted image from CR landing page: a sport of some kind.](images/ysoop1sa.jpeg)
+* No GPS coordinates for the above picture either. I may be doing something incorrectly.
+  ![downloaded from my google photos](images/zoo.jpg)
+* Still no GPS specifics.
+  ![downloaded from cr website](images/art.jpg)
+
+## Java-Assignment-003
 ### Input, Packages, Imports, and a static Method
 ## PART 1 - Build an External Package
 1. Watch the below linked video, and follow along on how we build a **Java Archive** artifact (**jar**) from a GitHub project.
@@ -59,3 +71,4 @@ java.nio.file.Path;
 * When completed, use your IDE to commit your Fall-2022 branch back to your GitHub Account's, Java-Assignment-003/Fall-2022 repo/branch.
 * From your GitHub account's branch's page, issue a New pull request from your *Fall-2022* branch to the instructor's *Fall-2022* branch and save the *Pull Request URL*.
 * Respond to this assignment with the Pull Request URL.
+
