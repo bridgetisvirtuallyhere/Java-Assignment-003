@@ -1,14 +1,7 @@
 # ASSIGNMENT 4
-* Look up how to pull an image from a public website.
-* Get image from a public website and run metadata extractor on it.
-* Use an image extractor site to get the images below. 
-  ![extracted image from CR landing page](images/crquad.jpg)
-* Looks like the image above might be a digital rendering uploaded on sept. 19th 2019 at 3:30pm. No GPD information, however, because it isn't a photo. Looks like they used a Mac.
-  ![extracted image from CR landing page: a sport of some kind.](images/ysoop1sa.jpeg)
-* No GPS coordinates for the above picture either. I may be doing something incorrectly.
-  ![downloaded from my google photos](images/zoo.jpg)
-* Still no GPS specifics.
-  ![downloaded from cr website](images/art.jpg)
+
+* import web scraper library
+* run metadata extractor on URL
 
 ## Java-Assignment-003
 ### Input, Packages, Imports, and a static Method
@@ -43,6 +36,18 @@ java.nio.file.Path;
 1. Pass the file object as an argument to the pre-written **getHiddenSecrets** method.
 1. Run the program and type in the path for our sample image, and record the GPS coordinates in the output.
   ![Ollie the Otter Image](images/OllieTheOtter.jpg)
+   //record of the GPS coordinates
+   System.out.println("""
+
+                RECORD OF GPS coordinates for OllieTheOtter image: [GPS] - GPS Latitude Ref = N
+                [GPS] - GPS Latitude = 40° 46' 37.46"
+                [GPS] - GPS Longitude Ref = W
+                [GPS] - GPS Longitude = -124° 8' 41.55"
+                [GPS] - GPS Altitude Ref = Sea level
+                [GPS] - GPS Altitude = 21.5 metres
+                [GPS] - GPS Time-Stamp = 18:42:20.000 UTC
+                [GPS] - GPS Processing Method = CELLID
+                [GPS] - GPS Date Stamp = 2022:08:22""");
     * HINT: the path can be relative to the project directory, maybe use the string in the example above :-)
 1. Look up the latitude and longitude coordinates in an online map.
 1. Screenshot the map and add it into the **images** folder of this project,
