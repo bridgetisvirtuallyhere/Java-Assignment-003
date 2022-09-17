@@ -13,10 +13,10 @@ import java.net.URL;
 
 public class HiddenSecrets {
 
-    public static void getHiddenSecrets(String string) {
+    public static void getHiddenSecrets(String file) {
         try {
             Metadata metadata = ImageMetadataReader.readMetadata(
-                    new URL(string).openStream()
+                    new URL(file).openStream()
             );
             for (Directory directory : metadata.getDirectories()) {
                 for (Tag tag : directory.getTags()) {
@@ -44,5 +44,6 @@ public class HiddenSecrets {
         System.out.println("Please enter URL: ");
         String url = (scanner.nextLine());
         getHiddenSecrets(String.valueOf(url));
+
     }
 }
